@@ -53,7 +53,7 @@ function insertImg() {
     const imgContainer = document.querySelector('.image-container');
     const imgNode = document.createElement('img');
     imgNode.classList.add('image-size');
-    imgNode.src = 'img-thunder.png';
+    imgNode.src = '/img-thunder.png';
     imgNode.alt = 'Dynamic Image';
     imgNode.style.left =  `${Math.random() * (window.innerWidth - 10)}px`;;
     imgContainer.appendChild(imgNode);
