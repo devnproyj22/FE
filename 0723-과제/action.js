@@ -41,7 +41,7 @@ function waitForGameEnd() {
                 if (isCollision(target, img)) {
                     clearInterval(interval);
                     clearInterval(imgInsertionInterval);
-                    alert(`Game Over : ${seconds}초 소요!`)
+                    alert(`Game Over : ${timerDiv.textContent}초 소요!`)
                     resolve();
                 }                
             })
