@@ -35,7 +35,7 @@ function waitForGameEnd() {
             const currentTime = new Date();
             const elapsedTime = currentTime - startTime; // 경과 시간 계산 (밀리초 단위)
             timerDiv.textContent = `${(elapsedTime / 1000).toFixed(2)}s`; // 밀리초를 초 단위로 변환하여 표시
-            
+            seconds++;
             const images = document.querySelectorAll('.image-size');
             images.forEach(img => {
                 if (isCollision(target, img)) {
